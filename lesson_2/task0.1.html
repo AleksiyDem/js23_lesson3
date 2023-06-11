@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script defer></script>
+
+</head>
+
+<body>
+
+	<h1>Задача № 0.1</h1>
+
+	<p> Обчислити значення виразів: s1 = a + 12 + b
+	</p>
+
+	<script defer>
+		// ---------------------------------------1. Вводимо необхідні дані---------------------------------------------------
+
+		let a = parseFloat(prompt('Ввідіть значення "a"', '0'))
+		let b = parseFloat(prompt('Ввідіть значення "b"', '0'))
+
+
+		//--------------------------------------- 2 Обчислення результату ----------------------------------------------------
+
+		let totalValue = a + 12 + b
+
+
+		//---------------------------------------3 Виведення результату -----------------------------------------------------
+
+		document.write(`Перемена a = ${a} <br> Перемена b = ${b}  <br> Значення S1 = ${totalValue.toFixed(2)} <br>`)
+
+
+	</script>
+
+</body>
+
+</html>

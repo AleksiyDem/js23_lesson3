@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<h1>Задача № 2</h1>
+
+	<p>
+	<h4> Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.
+
+		</p>
+
+		<script>
+			// --------------------------1. Вводимо необхідні дані------------------------------------------
+
+			let yearOfBirth = parseInt(prompt('Ввідіть рік народження', '1990')); // получаю рік народження від респондента
+
+			let today = new Date();
+			let curentYear = today.getFullYear(); // получаю актуальний рік
+
+
+
+
+
+			// ------------------------- 2 Обчислення результату-------------------------------------------- 
+
+			let totalAge = curentYear - yearOfBirth; // вираховую вік респондента, кількість років
+
+
+			//--------------------------- 3 Виведення результату --------------------------------------------
+
+			document.write(`Рік народження : 01.01. ${yearOfBirth} <br>`);
+			document.write(`Кількість років : ${totalAge} <br> `);
+
+
+
+
+		</script>
+
+</body>
+
+</html>

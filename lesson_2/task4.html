@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<h1>Задача № 4 </h1>
+
+	<p>
+	<h4>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</h4>
+	</p>
+
+	<script>
+		// --------------------------1. Вводимо необхідні дані------------------------------------------
+
+		let lengthStm = parseFloat(prompt('Ввідіть довжину у сантіметрах', '10.2')); // получаю довжину у сантіметрах від респондента
+
+		const metr = 1e-2;
+		const kilometr = 1e-5;
+
+
+
+
+
+		// ------------------------- 2 Обчислення результату-------------------------------------------- 
+
+
+		let totalMetrs = lengthStm * metr;
+
+		let totalKilometrs = lengthStm * kilometr;
+
+
+
+		//--------------------------- 3 Виведення результату --------------------------------------------
+
+
+		document.write(`Загальна кількість кілометрів : ${totalKilometrs.toFixed(4)}  <br>`);
+
+		document.write(`Загальна кількість метрів  : ${totalMetrs.toFixed(2)}  <br> `);
+
+
+
+
+	</script>
+
+</body>
+
+</html>

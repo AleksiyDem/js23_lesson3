@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 5</h1>
+
+	<p>
+	<h3>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль).
+		Вивести на екран назву транспортного засобу, яким він може керувати.
+	</h3>
+	</p>
+
+	<script>
+
+		//-----------------  1  Вводимо необхідні дані   ----------------------------------
+
+		let driverCategory = (prompt('Ввидіть назву категорії водія з велекої літери("А"-мотоцикл, "В"-легковий автомобіль, "С"-вантажний автомобіль) ', ''));
+
+		const cotegoryA = 'A';
+		const cotegoryВ = 'B';
+		const cotegoryС = 'C';
+		var result;
+
+
+		// ------------------  2 Обчислення результату та Виведення результату   ------------------------------------
+
+		switch (driverCategory) {
+			case cotegoryA: result = 'мотоцікл'
+				break
+			case cotegoryВ: result = 'легковий автомобіль'
+				break
+			case cotegoryС: result = 'вантажний автомобіль'
+				break
+			default: result = 'не коректна категорія'
+				break
+
+		};
+
+		document.write(`${result}`);
+
+
+
+	</script>
+
+
+</body>
+
+</html>

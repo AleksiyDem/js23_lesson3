@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<h1>Задача № 6 </h1>
+
+	<p>
+	<h4> З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо
+		та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</h4>
+	</p>
+
+	<script>
+		// --------------------------1. Вводимо необхідні дані------------------------------------------
+
+		let goodsOneQnt = parseFloat(prompt(`Ввідіть кількість одиниць першого товару`, `10`));   // вартість товару 1
+		let goodsTwoQnt = parseFloat(prompt(`Ввідіть кількість одиниць другого товару`, `7`));    // вартість товару 2
+		let goodsThreeQnt = parseFloat(prompt(`Ввідіть кількість одиниць третього товару`, `2.3`));  // вартість товару 3
+
+		let costOfGoodsOne = parseFloat(prompt(`Ввідіть вартість одиниці першого товару`, `30.50`)); // кількість товару 1 
+		let costOfGoodsTwo = parseFloat(prompt(`Ввідіть вартість одиниці другого товару`, `42`)); // кількість товару 2
+		let costOfGoodsThree = parseFloat(prompt(`Ввідіть вартість одиниці третього товару`, `39.10`)); // кількість товару 3
+
+
+
+
+
+
+
+		// ------------------------- 2 Обчислення результату-------------------------------------------- 
+
+
+		let totalCostOfGoodsOne = goodsOneQnt * costOfGoodsOne;  // загальна вартість товару 1 
+		let totalCostOfGoodsTwo = goodsTwoQnt * costOfGoodsTwo;  // загальна вартість товару 2 
+		let totalCostOfGoodsThree = goodsThreeQnt * costOfGoodsThree;  // загальна вартість товару 3
+
+		let sumTotalOfGoods = totalCostOfGoodsOne + totalCostOfGoodsTwo + totalCostOfGoodsThree; // загальна вартість всіх товарів 
+
+		const vat = 20; // ставка ПДВ
+		let totalVat = sumTotalOfGoods / 100 * vat;
+
+		let max = 99;
+		let min = 2;
+		let CheckNumber = min + Math.floor(Math.random() * (max - min + 1));  //  отримую Рандомний номер касового чека  
+
+		let date = new Date(); // отримаю актуальну дату, час ... 
+
+
+
+		//--------------------------- 3 Виведення результату --------------------------------------------
+
+
+		document.write(`ФІСКАЛЬНИЙ ЧЕК <br> № ${CheckNumber} <br><br> Перший товар: Кількість  ${goodsOneQnt}; Вартість ${costOfGoodsOne} грн. ; <br> Вартість Разом ${totalCostOfGoodsOne.toFixed(2)} грн 
+		<br><br> Другий товар: Кількість  ${goodsTwoQnt}; Вартість ${costOfGoodsTwo} грн. ; <br> Вартість Разом ${totalCostOfGoodsTwo.toFixed(2)} грн. <br><br>
+		 Третій товар: Кількість  ${goodsThreeQnt}; Вартість  ${costOfGoodsThree}грн. ; <br> Вартість Разом ${totalCostOfGoodsThree.toFixed(2)}грн. <br> <br>
+		 Загална сума до сплати: ${sumTotalOfGoods} <br> включно ПДВ 20% ${totalVat.toFixed(2)} грн. <br> <br> СЛАВА УКРАЇНІ!!! Вперед до перемоги!!!  <br> <br> ${date}`);
+
+
+
+	</script>
+
+</body>
+
+</html>

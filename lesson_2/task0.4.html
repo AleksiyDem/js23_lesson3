@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<h1>Задача № 0.4</h1>
+
+	<p>
+	<h4>Обчислити значення вираза s4 = Math.sin( a / -b)
+		</p>
+
+		<script>
+			//----------------------------------------- 1. Вводимо необхідні дані----------------------------------------------
+
+			let a = parseFloat(prompt('Ввідіть значення "a"', '0'))
+			let b = parseFloat(prompt('Ввідіть значення "-b"', '0'))
+
+
+			
+			//----------------------------------------- 2 Обчислення результату ----------------------------------------------
+
+			let totalValue = Math.sin(a / -b)
+
+
+
+			//----------------------------------------3 Виведення результату -------------------------------------------------
+
+			document.write(`Перемена a = ${a} <br> Перемена b = ${-b} <br> Значення S4 = ${totalValue.toFixed(2)}`)
+
+
+		</script>
+
+</body>
+
+</html>

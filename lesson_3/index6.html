@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 6</h1>
+
+	<p>
+	<h3>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+
+	</h3>
+	</p>
+
+	<script>
+
+		//-----------------  1  Вводимо необхідні дані   ----------------------------------
+
+		let numberDayOfWeek = parseInt(prompt('Ввидіть номер тижня ("1"-пнд, "2"-вівторок, "3"-середа, "4" - четверг, "5" - п\'ятниця "6" - cубота "7" - неділя'));
+
+		const monday = 1;
+		const tuesday = 2;
+		const wednesday = 3; 1
+		const thursday = 4;
+		const friday = 5;
+		const saturday = 6;
+		const sunday = 7;
+
+		var result;
+
+
+		// ------------------  2 Обчислення результату та Виведення результату   ------------------------------------
+
+		switch (numberDayOfWeek) {
+			case monday: result = 'Понеділок'
+				break
+			case tuesday: result = 'Вівторок'
+				break
+			case wednesday: result = 'Середа'
+				break
+			case thursday: result = 'Четверг'
+				break
+			case friday: result = "П'ятниця"
+				break
+			case saturday: result = 'Субота'
+				break
+			case sunday: result = 'Неділя'
+				break
+			default: result = 'не коректний день тижня'
+				break
+
+		};
+
+		document.write(`${result}`);
+
+
+
+	</script>
+
+
+</body>
+
+</html>

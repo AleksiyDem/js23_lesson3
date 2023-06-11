@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+
+	<h1> Задача 1</h1>
+
+
+	<p> З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести нa екран ім’я тієї дитини, у якої
+		кількість цукерок є більшою, або вивести, що кількість однакова. </p>
+
+	<script>
+
+		//-----------------  1  Вводимо необхідні дані   ----------------------------------
+		const firstChildName = prompt('Ввидіть ім\'я першої дитини', '')   // отримую ім`я першої дитини
+		let candyFirstChild = parseInt(prompt('Ввидіть кількість конфет у першої дитини :', '0'));  // отрумую кількість конфет перш дитини
+		const secondChildName = prompt('Ввидіть ім\'я другої дитини', '')  // отримую ім`я другої дитини
+		let candySecondChild = parseInt(prompt('Ввидіть кількість конфет у другої дитини :', '0')); // отримую кількість конфет другої дитини
+		let result
+
+		// ------------------  2 Обчислення результату та Виведення результату   ------------------------------------
+
+
+		if (candyFirstChild > candySecondChild)
+			result = firstChildName + 'має більше конфет'// вивід результату
+
+		if (candyFirstChild < candySecondChild)
+			result = secondChildName + 'має більше конфет'
+
+		//document.write(` ${candySecondChild} має більше конфет `) // вивід результату
+
+		if (candyFirstChild === candySecondChild)
+			result = 'обидві дитини мають однакову кількість конфет'
+		//document.write(`Обидві дитини мають однакову кількість конфет`)  // вивід результату
+
+		document.write(`${result}`)
+
+//---------------------------------------------------------------------------------------------------------------
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>

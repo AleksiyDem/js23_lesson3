@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 7</h1>
+
+	<p>
+	<h3>
+		З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься.
+	</h3>
+	</p>
+
+	<script>
+
+		//-----------------  1  Вводимо необхідні дані   ----------------------------------
+
+		let numberMonthOfYear = parseInt(prompt('Ввидіть номер місяця року (від "1" -січень, до "12"-грудень', ''));
+
+		const january = 1;
+		const february = 2;
+		const march = 3;
+		const april = 4;
+		const may = 5;
+		const june = 6;
+		const july = 7
+		const august = 8;
+		const september = 9;
+		const october = 10;
+		const nowember = 11;
+		const december = 12;
+
+		var result;
+
+
+		// ------------------  2 Обчислення результату та Виведення результату   ------------------------------------
+
+		switch (numberMonthOfYear) {
+			case january:
+			case february:
+			case december: result = 'Winter';
+				break;
+			case march:
+			case april:
+			case may: result = 'Spring';
+				break;
+			case june:
+			case july:
+			case august: result = 'Summer';
+				break;
+			case september:
+			case october:
+			case nowember: result = 'Autumn';
+				break;
+			default: result = 'Unknown seasson';
+				break;
+
+		}
+		document.write(`${result}`);
+
+
+
+	</script>
+
+
+</body>
+
+</html>

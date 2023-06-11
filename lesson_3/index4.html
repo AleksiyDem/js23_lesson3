@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 4</h1>
+
+	<p>
+	<h3>Завдання: З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом,
+		працівником, пенсіонером).</h3>
+	</p>
+
+	<script>
+
+		//-----------------  1  Вводимо необхідні дані   ----------------------------------
+
+		const humanAge = parseInt(prompt('Ввидіть вік людини', ' '))
+
+		const childrengardenAgeMin = 3;
+		const childrengardenAgeMax = 6;
+		const schoolAgeMin = 7;
+		const schoolAgeMax = 17;
+		const universityAgeMin = 18;
+		const universityAgeMax = 23;
+		const employeeAgeMin = 24;
+		const employeeAgeMax = 65;
+		const pensionerAgeMin = 66;
+		const pensionerAgeMax = 100;
+		let result;
+
+
+
+		// ------------------  2 Обчислення результату та Виведення результату   ------------------------------------
+
+
+		if (humanAge >= childrengardenAgeMin && humanAge <= childrengardenAgeMax)
+			result = 'дитина у садочку'
+		else if (humanAge >= schoolAgeMin && humanAge <= schoolAgeMax)
+			result = 'Школяр'
+		else if (humanAge >= universityAgeMin && humanAge <= universityAgeMax)
+			result = 'Студент'
+		else if (humanAge >= employeeAgeMin && humanAge <= employeeAgeMax)
+			result = 'Працівник'
+		else if (humanAge >= pensionerAgeMin && humanAge <= pensionerAgeMax)
+			result = 'Пенсіонер'
+
+
+		else result = 'Не відомий вік людини!'
+
+		document.write(`${result}`)
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>
